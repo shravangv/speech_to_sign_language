@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+<div class="login-box">
+  <h1>Speech to sign recognition</h1>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" placeholder="Username">
+  </div>
+
+  <form action="{{ url_for('index') }}" method="POST">
+    <div align="center" valign="center">
+      <button class="btn" onclick="this.form.submit();"> Convert </button>
+    </div>
+  </form>
+
+
+ <!--<input type="button" class="btn" value="convert">
+  -->
+</div>
+  </body>
+</html>
